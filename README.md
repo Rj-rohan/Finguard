@@ -286,3 +286,9 @@ MIT
 ---
 
 Built with ❤️ for InnovaHack 2025
+
+---
+
+## Quick Demo
+
+Visit `/settings` after deployment and click **Seed Demo Data** to load 10 subscriptions, price history, and alerts instantly.
