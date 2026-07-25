@@ -42,7 +42,7 @@ export default function AICopilot() {
         }]);
       })
       .catch(() => {
-        setMessages([{ role: "ai", text: "Hi! I'm your AI Copilot. Seed demo data to get personalized insights." }]);
+        setMessages([{ role: "ai", text: "Hi! I'm your AI Copilot." }]);
       });
   }, []);
 
