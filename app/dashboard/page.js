@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import prisma from "@/lib/prisma";
 import { AlertTriangle, TrendingUp, CreditCard, DollarSign, Gauge, Zap, ArrowUpRight, ArrowRight } from "lucide-react";
 import Link from "next/link";
