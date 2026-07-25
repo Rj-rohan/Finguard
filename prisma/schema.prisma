@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Transaction {
+  id          Int      @id @default(autoincrement())
+  merchant    String
+  amount      Float
+  date        DateTime
+  category    String   @default("Other")
+  source      String   @default("manual")
+  isRecurring Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+model Subscription {
+  id           Int       @id @default(autoincrement())
+  name         String
+  amount       Float
+  frequency    String    @default("monthly")
+  nextPayment  DateTime
+  category     String    @default("Entertainment")
+  status       String    @default("active")
+  lastUsed     DateTime?
+  trialEnd     DateTime?
+  createdAt    DateTime  @default(now())
+}
+
+model PriceHistory {
+  id             Int      @id @default(autoincrement())
+  subscriptionId Int
+  amount         Float
+  recordedAt     DateTime @default(now())
+}
+
+model Alert {
+  id        Int      @id @default(autoincrement())
+  type      String
+  message   String
+  severity  String   @default("info")
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
