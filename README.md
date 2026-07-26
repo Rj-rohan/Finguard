@@ -1,11 +1,11 @@
-# ⚡ LeakZero AI
+# ⚡ FinGuard AI
 
 > **Hidden Subscription & Recurring Payment Leak Detector**  
 > Stop losing money to forgotten subscriptions, price hikes, and duplicate services.
 
 ---
 
-## What is LeakZero AI?
+## What is FinGuard AI?
 
 LeakZero AI is a full-stack SaaS application that automatically detects financial leaks in your subscription spending. It analyzes your subscriptions, finds waste, identifies duplicates, tracks price hikes, and uses AI to give you personalized advice — all in real time.
 
